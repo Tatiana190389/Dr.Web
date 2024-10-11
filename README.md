@@ -2,4 +2,5 @@
 
 Использовала HTML, CSS(Sass).
 
-[Страница] (https://tatiana190389.github.io/Dr.Web/)
+
+[ Страница](https://tatiana190389.github.io/Dr.Web/)
