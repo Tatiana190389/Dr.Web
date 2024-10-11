@@ -1,0 +1,25 @@
+body {
+  font-family: $font-main;
+  background-color: $white;
+  color: $dark;
+  line-height: 1.2;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 350px;
+  @include mediaMobile {
+    max-width: 510px;
+  }
+  @include mediaTable {
+    max-width: 764px;
+  }
+  @include mediaTable {
+    max-width: 1171px;
+  }
+}
+
+.none {
+  display: none !important;
+}

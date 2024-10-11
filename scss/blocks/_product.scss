@@ -1,0 +1,165 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.black__container {
+  background-color: $dark;
+  @include mediaMobile {
+    background-color: $white;
+  }
+}
+.product__container {
+  align-items: center;
+  background-color: $dark;
+  padding-bottom: 40px;
+  display: grid;
+  gap: 60px;
+  border-radius: 32px;
+
+  @include mediaDesktop {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    padding: 80px 100px 80px 100px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px 0 25px;
+  gap: 32px;
+  @include mediaMobile {
+    padding: 60px 24px 0 24px;
+  }
+  @include mediaTable {
+    padding: 80px 130.5px 0 64.5px;
+  }
+  @include mediaDesktop {
+    padding: 110px 0 110px 0;
+  }
+}
+
+.info-title {
+  color: $light-green;
+  font-size: 20px;
+  font-weight: 600px;
+  text-wrap: nowrap;
+}
+
+.info__description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: $white;
+}
+.title5 {
+  font-size: 24px;
+  font-weight: 600px;
+  @include mediaMobile {
+    text-wrap: nowrap;
+  }
+  @include mediaTable {
+    font-size: 32px;
+    text-wrap: nowrap;
+  }
+}
+.mobile {
+  display: none;
+  @include mediaTable {
+    display: none;
+  }
+}
+.table {
+  display: none;
+  @include mediaMobile {
+    display: none;
+  }
+  @include mediaTable {
+    display: block;
+  }
+}
+.info__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.info-button {
+  border: 1px solid $light-grey;
+  border-radius: 80px;
+  padding: 8px 12px 8px 12px;
+  color: $light-grey;
+  text-wrap: nowrap;
+}
+.link {
+  font-size: 16px;
+  color: $light-green;
+  text-align: left;
+}
+.info-text {
+  font-size: 16px;
+  @include mediaTable {
+    font-size: 20px;
+  }
+}
+.card-SS {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 40px 32px 40px 32px;
+  //margin-left: 12px;
+  //margin-right: 12px;
+  gap: 24px;
+  @include mediaMobile {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  @include mediaTable {
+    margin-left: 168.5px;
+    margin-right: 168.5px;
+  }
+  @include mediaDesktop {
+    margin: 0;
+  }
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-gap;
+}
+.card-title {
+  font-size: 20px;
+  line-height: 1.5;
+  @include mediaMobile {
+    font-size: 24px;
+  }
+}
+.card-text {
+  color: $dark-grey;
+  font-size: 16px;
+}
+.prices {
+  display: flex;
+  justify-content: space-between;
+}
+.numbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.old-number {
+  color: $grey;
+  text-decoration: line-through;
+  font-size: 18px;
+  font-weight: 600;
+}
+.new-price {
+  font-size: 32px;
+  font-weight: 700;
+  align-items: left;
+}
+.NDS {
+  font-size: 14px;
+}

@@ -1,0 +1,144 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.header__container-top {
+  align-items: center;
+  text-align: center;
+}
+.header__top-row {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 32px;
+  align-items: center;
+  @include mediaMobile {
+    padding-top: 48px;
+  }
+  @include mediaTable {
+    padding-top: 86px;
+  }
+  @include mediaDesktop {
+    padding-top: 104px;
+  }
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo-img {
+  width: 170px;
+  height: 31.72px;
+  @include mediaMobile {
+    width: 268px;
+    height: 50px;
+  }
+}
+
+.title {
+  display: grid;
+  flex: 1;
+  gap: $spacing-gap;
+  text-align: center;
+  text-wrap: nowrap;
+}
+.title6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: $dark-grey;
+  @include mediaMobile {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  @include mediaDesktop {
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+.title4 {
+  font-weight: 800;
+  font-size: 20px;
+  color: $dark;
+  @include mediaMobile {
+    font-size: 30px;
+  }
+  @include mediaTable {
+    font-size: 42px;
+  }
+  @include mediaDesktop {
+    font-size: 86px;
+  }
+}
+
+.header__button {
+  font-size: 18px;
+  border-radius: 5px;
+  text-wrap: nowrap;
+  background-color: $light-green;
+  color: $white;
+  padding: 15px $spacing-gap;
+  &:hover {
+    background-color: $green-hover;
+  }
+  @include mediaMobile {
+    padding: 15px 32px;
+  }
+}
+a {
+  text-align: center;
+}
+
+.header__container-bottom {
+  margin-top: 24px;
+  padding: 0;
+  @include mediaTable {
+    margin-top: 54px;
+  }
+}
+.header__image {
+  position: relative;
+}
+.rectangle {
+  background: $light-grey;
+  width: 100%;
+  min-height: 90%;
+  border-radius: 16px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.header-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.price {
+  background-color: $light-green;
+  color: $white;
+  border-radius: 7.84px;
+  padding: 5px;
+  font-size: 24.23px;
+  font-weight: 600;
+  position: absolute;
+  top: 40%;
+  left: 75%;
+
+  @include mediaMobile {
+    border-radius: 12px;
+    padding: 8px 15px 8px 15px;
+    font-size: 37.07px;
+  }
+  @include mediaTable {
+    border-radius: 22.54px;
+    padding: 10px 18px 10px 18px;
+    font-size: 46.15px;
+  }
+  @include mediaDesktop {
+    border-radius: 42px;
+    padding: 19px 35px 19px 35px;
+    font-size: 86px;
+  }
+}

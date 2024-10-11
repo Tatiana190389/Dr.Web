@@ -1,0 +1,26 @@
+.footer {
+  background: $dark;
+}
+.footer__container {
+  padding: 40px 12px 40px 12px;
+  color: $footer-color-font;
+  font-size: 14px;
+  display: grid;
+  gap: $spacing-gap;
+  background: $dark;
+}
+
+.footer__title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.footer-br {
+  display: none;
+  @include mediaTable {
+    display: block;
+  }
+  @include mediaDesktop {
+    display: block;
+  }
+}

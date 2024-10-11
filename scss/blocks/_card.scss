@@ -1,0 +1,80 @@
+.security__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 48px;
+  padding-top: 20px;
+  @include mediaTable {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  @include mediaDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.card {
+  background-color: $light-grey;
+  border-radius: 16px;
+  position: relative;
+  min-height: 210px;
+  @include mediaMobile {
+    min-height: 382px;
+    border-radius: 32px;
+  }
+  @include mediaTable {
+    min-height: 656px;
+    border-radius: 32px;
+  }
+  @include mediaDesktop {
+    min-width: 569px;
+    min-height: 616px;
+  }
+}
+.card__content {
+  padding-top: 24px;
+  padding-left: 24px;
+  @include mediaTable {
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+  @include mediaDesktop {
+    padding-top: 64px;
+    padding-left: 64px;
+  }
+}
+
+.security__card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 13px;
+  @include mediaMobile {
+    font-size: 24px;
+  }
+  @include mediaDesktop {
+    font-size: 32px;
+  }
+}
+
+.card-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @include mediaMobile {
+    height: 220px;
+  }
+  @include mediaTable {
+    height: 340px;
+  }
+}
+
+.card-list {
+  color: $dark-grey;
+  @include mediaDesktop {
+    font-size: 20px;
+  }
+}
